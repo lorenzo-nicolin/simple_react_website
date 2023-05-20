@@ -2,19 +2,21 @@
 // import Button from 'react-bootstrap/Button';
 // import Accordion from 'react-bootstrap/Accordion';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
+
 
 function Header() {
     return (
         <div className="HeaderClass">
             <Nav defaultActiveKey="/home" as="ul">
                 <Nav.Item as="li">
-                    <Nav.Link href="/home">Active</Nav.Link>
+                <Link to="/">Home</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-1">Link</Nav.Link>
+                    <Link to="/about">About</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2">Link</Nav.Link>
+                <Link to="/contact">Contact</Link>
                 </Nav.Item>
             </Nav>
         </div>
